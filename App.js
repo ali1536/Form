@@ -7,7 +7,11 @@ class MyComponent extends Component {
         this.state = {
             username: "",
             createdAt: new Date(),
-            source: ""
+            source: "",
+            warehouse: "",
+            ordernumber: "",
+            shipingdata: "",
+            destination: ""
         };
     }
     handleUsernameChange = (event) => {
