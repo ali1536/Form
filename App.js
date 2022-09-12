@@ -35,7 +35,7 @@ class MyComponent extends Component {
     handleDestinationChange = (event) => {
         this.setState({ destination: event.target.value });
     }
-    handleSumit = () => {
+    handlesubmit = () => {
         console.log(this.state);
     }
 
@@ -111,9 +111,10 @@ class MyComponent extends Component {
                                         className="btn btn-secondary"
                                         OnClientClick="this.disabled = true; this.value = 'در حال پردازش اطلاعات ...';"
                                         UseSubmitBehavior="false"
-                                        onClick={this.handleSumit}
+                                        onClick={this.handlesubmit}
                                         data-bs-dismiss="modal">Yes</button>
-                                    <button type="button" className="btn btn-secondary" >No </button>
+                                    <button type="button" className="btn btn-secondary"
+                                        data-bs-dismiss="modal" >No </button>
                                 </div>
                             </div>
                         </div>
